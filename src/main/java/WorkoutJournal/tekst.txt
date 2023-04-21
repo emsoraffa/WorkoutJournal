@@ -1,0 +1,129 @@
+OOP Prosjektplan (WorkoutJournal)
+Del 1:
+Beskrivelse av prosjektet
+
+En bruker skal kunne 
+
+En bruker har en journal som har flere økter (entries) som består av flere øvelser (Exercises)
+
+Funksjonalitet: 
+Logge inn / ut (Lage bruker)
+Velge dato og se dagens økt. (Navigere i datoer)
+Legge inn en økt i journalen (legge til og slette øvelser i økta)
+Generere en tilfeldig økt
+
+
+Grunnklasser
+
+Member/Person
+WorkoutJournal Journal;
+String username;
+String password;
+
+WorkoutJournal
+List<WorkoutSession>	
+
+Iworkout
+add exercise
+remove excercise
+
+WorkoutSuggestion implements Iworkout
+ 	-generer en workout
+
+
+WorkoutSession implements Iworkout
+Attributter:	
+List<Excercise>  excercises;
+	int duration; (minutes)
+	String date;
+	
+
+Excercise
+	String name;
+	int set;
+	int rep;
+	int weight;
+	Char load; (H, M, L)
+
+
+
+Filbehandling
+Alle journalinnlegg blir lagret til fil og når programmet åpner
+
+
+FXML-filer
+Innlogging
+Regsitrering
+Journalen
+addWorkout
+
+Testing
+
+-Teste å opprette person uten tall
+-teste å opprete person med tall større enn tidligere
+-teste å opprette person med tall mindre enn tidligere
+-teste calculate load
+-teste 
+
+
+Tobias:
+brukernavn
+passord
+dagbok:{
+1999-01-11:{
+øvelse1
+øvels2}
+1999-01-12:{
+øvelse1
+øvelse2
+}
+}
+
+dateformat "ddmmyyyy"
+
+
+
+
+
+{
+	Tobias: hashmap,
+	emil : hashmap,
+}
+
+{
+	brukernavn:
+	passord:
+	dagbok: hashmap
+}
+
+{
+	15112020: hashmap,
+	12012021: hashmap
+}
+
+{
+	"øvelse 1":hashmap,
+}
+
+
+
+TODO
+
+Add exercise FXML (Gjort)
+
+Flyt fra fil til objekter
+
+data mellom app og backend
+
+generate exercise 
+
+create user 
+
+lage tester
+
+validateDate - Workoutsession
+
+
+
+
+
